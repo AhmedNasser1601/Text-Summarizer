@@ -4,6 +4,7 @@ import torch.nn.functional as F
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
+from .summarizer import Summarizer
 
 class Summarizer(nn.Module):
     def __init__(self):
@@ -48,8 +49,6 @@ class Summarizer(nn.Module):
                 summary += " " + sentence
 
         return summary
-
-from .summarizer import Summarizer
 
 def summarize(text):
     # Create an instance of the Summarizer model
