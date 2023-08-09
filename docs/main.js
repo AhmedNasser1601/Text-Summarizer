@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 var json = JSON.parse(xhr.responseText);
-                document.getElementById('summary').value = json.summary;
+                document.getElementById('summary').textContent = json.summary;
             }
         };
         var data = JSON.stringify({
