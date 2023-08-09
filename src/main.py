@@ -8,6 +8,7 @@ def main(input_json):
     # Create an instance of the Summarizer model
     model = Summarizer()
 
+    # Implement the forward pass logic here
     # Call the model's forward method with the input text to get the summary
     summary = model.forward(text)
 
