@@ -5,12 +5,11 @@ def main(input_json):
     # Parse the input JSON to get the Arabic text
     text = json.loads(input_json)["text"]
 
-    # Create an instance of the Summarizer model
-    model = Summarizer()
-
-    # Implement the forward pass logic here
-    # Call the model's forward method with the input text to get the summary
+    # Re-implement the forward pass logic
     summary = model.forward(text)
+
+    # Ensure that the `text` variable is properly declared or assigned a value
+    text = json.loads(input_json)["text"]
 
     # Return the resulting summary as a JSON object
     return json.dumps({"summary": summary}), 200, {'Content-Type': 'application/json'}
