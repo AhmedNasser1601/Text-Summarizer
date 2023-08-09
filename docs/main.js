@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             method: 'POST',
             headers: {
                 'Accept': 'application/vnd.github.everest-preview+json',
-                'Authorization': 'token YOUR_GITHUB_TOKEN'
+                'Authorization': 'token YOUR_ACTUAL_GITHUB_TOKEN'
             },
             body: JSON.stringify({
                 event_type: 'summarize',
