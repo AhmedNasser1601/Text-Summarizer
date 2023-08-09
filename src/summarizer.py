@@ -1,6 +1,18 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
+
+class Summarizer(nn.Module):
+    def __init__(self):
+        super(Summarizer, self).__init__()
+        # Define the model architecture here
+
+    def forward(self, text):
+        # Implement the forward pass logic here
+        pass
 
 def summarize(text):
     # Tokenize the text
