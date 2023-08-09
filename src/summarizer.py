@@ -49,8 +49,6 @@ class Summarizer(nn.Module):
 
         return summary
 
-from .summarizer import Summarizer
-
 def summarize(text):
     # Create an instance of the Summarizer model
     model = Summarizer()
