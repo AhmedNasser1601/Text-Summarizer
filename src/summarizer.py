@@ -9,4 +9,7 @@ class Summarizer(nn.Module):
 
     def forward(self, text):
         # Implement the forward pass logic here to generate the summary
+        # Add your implementation here
+        # Example implementation:
+        summary = "This is a summary"
         return summary
