@@ -1,3 +1,7 @@
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+
 def pytorch_summarize(text):
     # PyTorch model implementation for Arabic text summarization
     # Replace this code with the actual PyTorch model implementation
