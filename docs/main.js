@@ -4,22 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const inputText = document.getElementById('input-text').value;
 
-        fetch('https://api.github.com/repos/AhmedNasser1601/Arabic-Summarizer/dispatches', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/vnd.github.everest-preview+json',
-                'Authorization': 'token YOUR_ACTUAL_GITHUB_TOKEN'
-            },
-            body: JSON.stringify({
-                event_type: 'summarize',
-                client_payload: {
-                    text: inputText
-                }
-            })
-        })
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('summary').innerText = data.summary;
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/execute", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var json = JSON.parse(xhr.responseText);
+                document.getElementById('summary').innerText = json.summary;
+            }
+        };
+        var data = JSON.stringify({
+            "text": inputText
         });
+        xhr.send(data);
     });
 });
