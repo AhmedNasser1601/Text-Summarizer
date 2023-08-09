@@ -57,4 +57,8 @@ def summarize(text):
     # Call the model's forward method with the input text to get the summary
     summary = model.forward(text)
 
+    # Display the output summary in a read-only text box
+    output_text_box = create_read_only_text_box()
+    output_text_box.text = summary
+
     return summary
