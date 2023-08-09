@@ -1,6 +1,6 @@
 # Arabic-Summarizer
 
-> ## The Arabic-Summarizer python app allows users to easily summarize Arabic text. It is a helpful tool for those who need to extract key information from lengthy Arabic texts. The app uses advanced natural language processing techniques to analyze the text and generate concise summaries. It can be used for various purposes, such as research, content creation, or studying. The user-friendly interface makes it easy to input the Arabic text and quickly obtain a summary. Whether you're a student, researcher, or content creator, this app can save you time and effort by providing accurate and efficient summaries of Arabic texts.
+> The Arabic-Summarizer python app allows users to easily summarize Arabic text. It is a helpful tool for those who need to extract key information from lengthy Arabic texts. The app uses advanced natural language processing techniques to analyze the text and generate concise summaries. It can be used for various purposes, such as research, content creation, or studying. The user-friendly interface makes it easy to input the Arabic text and quickly obtain a summary. Whether you're a student, researcher, or content creator, this app can save you time and effort by providing accurate and efficient summaries of Arabic texts.
 
 ## Running the Application
 
