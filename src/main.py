@@ -9,4 +9,4 @@ def main(input_json):
     summary = summarize(text)
 
     # Return the resulting summary as a JSON object
-    return json.dumps({"summary": summary})
+    return json.dumps({"summary": summary}), 200, {'Content-Type': 'application/json'}
