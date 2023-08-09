@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        textarea, #summary {
+            width: 100%;
+            min-height: 100px;
+        }
+    </style>
     <title>Arabic Summarizer</title>
 </head>
 <body>
     <h1>Arabic Summarizer</h1>
     <form id="summarizer-form">
-        <textarea id="input-text" placeholder="Enter Arabic text here..."></textarea>
+        <textarea id="input-text" placeholder="Enter Arabic text here..." rows="5"></textarea>
         <button type="submit" id="summarize-button">Summarize</button>
     </form>
     <div id="summary"></div>
