@@ -9,6 +9,7 @@ class Summarizer(nn.Module):
     def __init__(self):
         super(Summarizer, self).__init__()
         # Define the model architecture here
+        self.fc = nn.Linear(input_size, output_size)
 
     def forward(self, text):
         # Implement the forward pass logic here
