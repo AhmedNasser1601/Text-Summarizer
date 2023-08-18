@@ -1,8 +1,9 @@
 import json
 
 def summarize_arabic_text(input_text):
-    # Implement the logic to summarize the Arabic text using natural language processing techniques
-    summarized_sentence = "This is a summarized sentence."
+    # Update the implementation to use natural language processing techniques for summarizing Arabic text
+    # Implement the logic here
+    summarized_sentence = "Updated summarized sentence using natural language processing techniques."
     return summarized_sentence
 
 def main(input_json):
