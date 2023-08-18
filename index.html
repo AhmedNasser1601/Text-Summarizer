@@ -22,9 +22,37 @@
         <button type="submit" id="summarize-button">Summarize</button>
     </form>
     <textarea id="summary" readonly></textarea>
+    <div id="summary-output"></div>
     <footer>
         <p>Developed by Eng. Ahmed Nasser</p>
     </footer>
     <script src="main.js"></script>
+    <script>
+        const form = document.getElementById('summarizer-form');
+        const inputText = document.getElementById('input-text');
+        const summaryOutput = document.getElementById('summary-output');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const text = inputText.value;
+    
+            // Make a POST request to the server with the input text
+            fetch('/execute', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text: text })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update the content of the summary-output element with the generated summary
+                summaryOutput.textContent = data.summary;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
 </body>
 </html>
