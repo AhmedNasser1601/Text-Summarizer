@@ -43,6 +43,10 @@ This project is a web application that provides text summarization functionality
 3. Click the "Summarize" button.
 4. Wait for the summary to be generated. The summary will be displayed below the form.
 
+## Example
+
+<img src="https://github.com/AhmedNasser1601/Text-Summarizer/blob/e7390af03016561dfe10a986845e808673a96a69/example.png?raw=true" />
+
 ## File Structure
 
 - `main.py`: The backend Flask application that handles requests and performs text summarization.
