@@ -1,4 +1,4 @@
-# Text Summarizer
+# [Text Summarizer](https://ahmednasser1601.github.io/Text-Summarizer)
 
 This project is a web application that provides text summarization functionality. It allows users to input text and receive a summarized version of the input text. The application is built using Flask for the backend and HTML, CSS, and JavaScript for the frontend. It uses the Hugging Face Transformers library for text summarization.
 
