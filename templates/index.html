@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="icon" href="https://github.com/AhmedNasser1601/Arabic-Summarizer/blob/c89141725f4e2e642f319072defd1d36d43267e5/icon.png?raw=true">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+    <header>
+        ⭐ Text Summarizer ⭐
+    </header>
+
+    <main>
+        <form id="summarizeForm">
+            <textarea id="inputText" placeholder="Enter text here.."></textarea>
+            <div>
+                <div>
+                    <label for="minLength">Min Length:</label>
+                    <button type="button" onclick="changeLength('minLength', -10)">-</button>
+                    <input type="text" id="minLength" value="30" readonly>
+                    <button type="button" onclick="changeLength('minLength', 10)">+</button>
+                </div>
+                <div>
+                    <label for="maxLength">Max Length:</label>
+                    <button type="button" onclick="changeLength('maxLength', -10)">-</button>
+                    <input type="text" id="maxLength" value="130" readonly>
+                    <button type="button" onclick="changeLength('maxLength', 10)">+</button>
+                </div>
+            </div>
+            <button type="submit" id="submitButton">Summarize</button>
+        </form>
+        <div id="summary"></div>
+        <div id="loading" class="hidden"></div>
+    </main>
+
+    <footer>
+        Developed with ❤️ Eng. Ahmed Nasser
+    </footer>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+</html>
