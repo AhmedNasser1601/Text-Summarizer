@@ -1,19 +1,65 @@
-# Arabic-Summarizer
+# Text Summarizer
 
-> The Arabic-Summarizer python app allows users to easily summarize Arabic text. It is a helpful tool for those who need to extract key information from lengthy Arabic texts. The app uses advanced natural language processing techniques to analyze the text and generate concise summaries. It can be used for various purposes, such as research, content creation, or studying. The user-friendly interface makes it easy to input the Arabic text and quickly obtain a summary. Whether you're a student, researcher, or content creator, this app can save you time and effort by providing accurate and efficient summaries of Arabic texts.
+This project is a web application that provides text summarization functionality. It allows users to input text and receive a summarized version of the input text. The application is built using Flask for the backend and HTML, CSS, and JavaScript for the frontend. It uses the Hugging Face Transformers library for text summarization.
 
-## Running the Application
+## Features
 
-To run the application, navigate to the directory containing the Python script and run the following command:
+- Summarizes input text using a pre-trained model from Hugging Face.
+- Allows users to specify minimum and maximum lengths for the summary.
+- Provides a user-friendly interface with a loading indicator.
+- Ensures that the maximum length is greater than the minimum length.
 
+## Installation
+
+### Prerequisites
+
+- Python 3.6 or higher
+- pip (Python package installer)
+
+### Steps
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/AhmedNasser1601/Text-Summarizer.git
+    cd Text-Summarizer
+    ```
+
+2. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Run the application:
+    ```sh
+    python main.py
+    ```
+
+4. Open your web browser and go to `http://127.0.0.1:5000`.
+
+## Usage
+
+1. Enter the text you want to summarize in the text area.
+2. Adjust the minimum and maximum lengths using the plus and minus buttons.
+3. Click the "Summarize" button.
+4. Wait for the summary to be generated. The summary will be displayed below the form.
+
+## File Structure
+
+- `main.py`: The backend Flask application that handles requests and performs text summarization.
+- `templates/index.html`: The main HTML file that contains the structure of the web page.
+- `static/main.css`: The CSS file for styling the web page.
+- `static/main.js`: The JavaScript file that handles form submission and interacts with the backend.
+
+## Requirements
+```plaintext
+flask
+flask-cors
+transformers
+torch
 ```
-python main.py
-```
 
-## Inputting the Arabic Text
+## Acknowledgements
+- Hugging Face for the Transformers library
+- Flask framework
 
-You can input the Arabic text directly into the command line when prompted by the application. Alternatively, you can provide a file containing the text by using the `-f` or `--file` option followed by the path to the file.
-
-## Output
-
-The application will generate a summary of the input text and display it in the command line. The summary will include the key information extracted from the text, presented in a concise and readable format.
+> ### Feel free to contribute to this project by creating issues or submitting pull requests.
