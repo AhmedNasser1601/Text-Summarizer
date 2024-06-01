@@ -25,6 +25,7 @@ document.getElementById("summarizeForm").addEventListener("submit", async functi
     });
 
     const data = await response.json();
+    document.getElementById("summary").classList.remove("hidden");
     document.getElementById("summary").textContent = data.summary;
     document.getElementById("loading").classList.add("hidden");
     document.getElementById("submitButton").disabled = false;
